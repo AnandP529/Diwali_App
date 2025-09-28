@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Diwali_App/static/css/main.0bbfbaa6.css",
-    "main.js": "/Diwali_App/static/js/main.9bdce87c.js",
+    "main.css": "/Diwali_App/static/css/main.785f055b.css",
+    "main.js": "/Diwali_App/static/js/main.3408f68b.js",
     "static/js/453.9a833168.chunk.js": "/Diwali_App/static/js/453.9a833168.chunk.js",
     "static/media/diwali_bg.png": "/Diwali_App/static/media/diwali_bg.b48e87026af032c8d191.png",
     "static/media/Family pack large.jpg": "/Diwali_App/static/media/Family pack large.ada8004bb5bcd4009c52.jpg",
@@ -65,12 +65,12 @@
     "static/media/Rockets.jpg": "/Diwali_App/static/media/Rockets.c9fe002fc5724c6bce3a.jpg",
     "static/media/Family Pack Small.jpg": "/Diwali_App/static/media/Family Pack Small.1c3353906a5304a24f89.jpg",
     "index.html": "/Diwali_App/index.html",
-    "main.0bbfbaa6.css.map": "/Diwali_App/static/css/main.0bbfbaa6.css.map",
-    "main.9bdce87c.js.map": "/Diwali_App/static/js/main.9bdce87c.js.map",
+    "main.785f055b.css.map": "/Diwali_App/static/css/main.785f055b.css.map",
+    "main.3408f68b.js.map": "/Diwali_App/static/js/main.3408f68b.js.map",
     "453.9a833168.chunk.js.map": "/Diwali_App/static/js/453.9a833168.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bbfbaa6.css",
-    "static/js/main.9bdce87c.js"
+    "static/css/main.785f055b.css",
+    "static/js/main.3408f68b.js"
   ]
 }
