@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // 🔹 use HashRouter
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/Landingpage";
 import Contact from "./components/Contact";
@@ -32,14 +32,11 @@ function App() {
           <Route path="/product/:productName" element={<ProductDetails />} />
           <Route path="/signin" element={<SignIn setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/signup" element={<SignUp setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="/address" element={<Contact/>}/>
+          <Route path="/address" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/billing" element={<Billing />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/wish" element={<WishMessage />} />
-
-
-
         </Routes>
       </div>
     </Router>
