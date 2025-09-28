@@ -1,0 +1,229 @@
+/* ProductDetails.css */
+
+.product-details-page {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.back-button {
+  background-color: #ff7a18;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.back-button:hover {
+  background-color: #af002d;
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(255, 122, 24, 0.4);
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.product-info h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: center;
+}
+
+.product-info p {
+  font-size: 15px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-info strong {
+  color: #ff7a18;
+  font-size: 16px;
+}
+
+.quantity-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.quantity-selector button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #ff7a18;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quantity-selector button:hover {
+  background-color: #af002d;
+  transform: scale(1.1);
+}
+
+.quantity-selector span {
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.action-buttons button:first-child {
+  background-color: #ff7a18;
+  color: #fff;
+}
+
+.action-buttons button:first-child:hover {
+  background-color: #af002d;
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(255, 122, 24, 0.4);
+}
+
+.action-buttons button:last-child {
+  background-color: #00b894;
+  color: #fff;
+}
+
+.action-buttons button:last-child:hover {
+  background-color: #019875;
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(0, 184, 148, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .products-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.back-button-container {
+  width: 100%;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background: #ff7a18;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background: #af002d;
+}
+/* Global action buttons container */
+.global-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+  margin: 30px 0;
+}
+
+.global-actions button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  color: #fff;
+}
+
+/* Buy All Selected Products button */
+.global-actions button:first-child {
+  background-color: #ff6b6b; /* red/pinkish */
+}
+
+.global-actions button:first-child:hover {
+  background-color: #ff4b4b;
+  transform: translateY(-2px);
+}
+
+/* Add All to Cart button */
+.global-actions button:last-child {
+  background-color: #4caf50; /* green */
+}
+
+.global-actions button:last-child:hover {
+  background-color: #43a047;
+  transform: translateY(-2px);
+}

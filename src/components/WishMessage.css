@@ -1,0 +1,39 @@
+.wish-page {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fff3e0;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ffa726;
+}
+
+h1 {
+  color: #e65100;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #ff6f00;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.home-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background-color: #fb8c00;
+}

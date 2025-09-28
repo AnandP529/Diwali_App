@@ -1,0 +1,137 @@
+/* Container to hold address, map, and form */
+.contact-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #fff8f0; 
+  min-height: 40vh;
+}
+
+/* Equal sections */
+.address-text,
+.map-section,
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  min-height: 350px;
+}
+
+/* Address */
+.address-text {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 2.0;
+}
+
+.address-text h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #4b0082;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Map */
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Form */
+.form-section {
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.form-card h4 {
+  margin-bottom: 20px;
+  color: #4b0082;
+  text-align: center;
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="number"] {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-card input:focus {
+  border-color: #4b0082;
+  box-shadow: 0 0 5px rgba(75, 0, 130, 0.3);
+}
+
+.submit-btn {
+  background-color: #4b0082;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #6a0dad;
+  transform: translateY(-2px);
+}
+
+.success-msg {
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-section iframe,
+  .address-text,
+  .form-section {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .address-text {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,76 @@
+.payment-page {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.billing-summary-section,
+.address-section,
+.payment-method-section {
+  background-color: #f8f8f8;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.billing-item {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.billing-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.billing-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.billing-totals p,
+.billing-totals h3 {
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: right;
+}
+
+.address-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.payment-options label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.confirm-payment-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.confirm-payment-btn:hover {
+  background-color: #45a049;
+}

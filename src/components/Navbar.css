@@ -1,0 +1,162 @@
+/* Global reset for consistent layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: auto;
+  overflow-x: hidden;   /* Prevent horizontal scroll */
+  overflow-y: auto;     /* Allow vertical scroll */
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo left, links + buttons right */
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  background-color: black;
+  color: white;
+  z-index: 1000; /* Keep it on top */
+  position: sticky;
+  top: 0;
+}
+
+/* Logo */
+.logo h2 {
+  margin: 0;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 30px;
+  color: white;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  outline: none;
+  background: none;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #ffc107; 
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.nav-buttons a {
+  background-color: #ffc107;
+  color: #0d6efd;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-buttons a:hover,
+.nav-buttons a:focus {
+  background-color: #e0a800;
+  color: white;
+}
+
+/* Landing Section */
+.landing {
+  background: white url("../Assests/diwali_bg.png") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;   /* ✅ min-height so footer & contact are visible */
+  display: flex;
+  flex-direction: column;
+}
+
+.Wrapper {
+  height: 100%;
+}
+
+.content {
+  margin-top: 150px;
+  margin-left: 50px;
+  color: wheat;
+  font-size: 20px;
+  justify-content: center;
+}
+.content h1{
+  margin-left: 20px;
+  color: beige;
+}
+.content h2{
+  margin-left: 0px;
+  color: beige;
+}
+
+.para {
+  font-size: 20px;
+  color: beige;
+  margin-left: 300px;
+  margin-top: 70px;
+}
+
+/* Footer */
+.container {
+  background-color: black;
+  color: white;
+  padding: 5px 0;     
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;      
+}
+
+
+/* Remove unwanted outline */
+a:focus,
+button:focus {
+  outline: none;
+}
+
+/* Navbar buttons */
+.nav-buttons button.logout-button {
+  background-color: #ff4d4d; /* Bright red for attention */
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-buttons button.logout-button:hover {
+  background-color: #e60000; /* Darker red on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-buttons button.logout-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
